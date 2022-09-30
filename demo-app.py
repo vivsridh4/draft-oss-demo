@@ -10,7 +10,7 @@ app = Flask(__name__)
 def hello_world():
     
     import requests
-    response = requests.get("https://vicky007.azurewebsites.net/api/vicky?name=Draft v2 on K8s demo")
+    response = requests.get("https://vicky007.azurewebsites.net/api/vicky?name=samosa at #opensourceindia #osi2022")
     print(response) 
     return "Samosa at #OSI2022\n"
 
