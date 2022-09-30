@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: tweetpyapp
+  name: tweetpyapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tweetpyapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: tweetpyapp
+    spec:
+      containers:
+      - image: draftreg.azurecr.io/tweetpyapp
+        name: tweetpyapp
+        ports:
+        - containerPort: 8080
+        resources: {}
+status: {}
